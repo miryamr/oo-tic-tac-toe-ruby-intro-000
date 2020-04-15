@@ -27,7 +27,7 @@ class TicTacToe
     user_input.to_i - 1
   end
 
-  def move(index, player_token = "X")
+  def move(index, player_token)
     @board[index] = player_token
   end
 
@@ -45,7 +45,7 @@ class TicTacToe
       index = input_to_index(user_input)
       if valid_move?(index) && current_player
         turn_count
-        move(index, player_token = "X" or player_token = "O")
+        move(index, player_token)
         display_board
       else
         turn
