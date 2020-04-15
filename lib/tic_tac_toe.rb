@@ -45,7 +45,7 @@ class TicTacToe
       index = input_to_index(user_input)
       if valid_move?(index) && current_player
         turn_count
-        move(index, player_token)
+        move(index, player_token = "X")
         display_board
       else
         turn
@@ -53,7 +53,7 @@ class TicTacToe
   end
 
  def turn_count
-   @board.count{|token| token == "X" || token == "O"}
+   @board.count{|token| player_token == "X" || player_token == "O"}
  end
 
  def current_player
