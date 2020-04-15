@@ -98,6 +98,7 @@ class TicTacToe
   until over?
       turn
   end
+  binding.pry 
     if won?
       puts "Congratulations #{winner}!"
     else
@@ -105,4 +106,4 @@ class TicTacToe
     end
   end
 
-end 
+end
