@@ -50,7 +50,7 @@ class TicTacToe
       else
         turn
       end
-    end
+  end
 
  def turn_count
    @board.count{|token| token == "X" || token == "O"}
@@ -76,7 +76,7 @@ class TicTacToe
        @board.all? do |each_index|
          each_index == "X" || each_index == "O"
        end
-       end
+   end
 
   def draw?
    !won? && full?
@@ -103,3 +103,6 @@ class TicTacToe
     else
       puts "Cat's Game!"
     end
+  end
+
+end 
