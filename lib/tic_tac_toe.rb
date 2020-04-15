@@ -84,6 +84,7 @@ class TicTacToe
 
   def over?
    won? || draw?
+     binding.pry 
   end
 
   def winner
@@ -98,7 +99,6 @@ class TicTacToe
   until over?
       turn
   end
-  binding.pry 
     if won?
       puts "Congratulations #{winner}!"
     else
