@@ -84,7 +84,6 @@ class TicTacToe
 
   def over?
    won? || draw?
-     binding.pry 
   end
 
   def winner
